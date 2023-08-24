@@ -1,14 +1,144 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./vendor/normalize.css">
+  <link rel="icon" type="image/x-icon" href="./favicon/favicon.ico">
+  <title>Around The U.S</title>
 </head>
 
 <body>
-    <script src="script.js"></script>
-
+  <script src="script.js"></script>
+  <div class="page">
+    <!--form-->
+    <section class="form">
+      <div class="popup">
+        <button class="popup__button" id="close-button"><img class="close-button" src="./images/close.png">
+        </button>
+        <div class="form__toggle">
+          <form class="popup__container">
+            <h2 class="popup__title">Editar perfil</h2>
+            <div class="popup__paragraph">
+              <h3 class="popup__heading">Jacques Cousteau</h3>
+              <img class="popup__line" src="./images/line-.jpg" alt="line">
+              <h3 class="popup__subheading">Explorar</h3>
+              <img class="popup__line" src="./images/line-.jpg" alt="line">
+            </div>
+          </form>
+          <button class="popup__save-button" id="save-button">
+            <h3 class="button-heading">Salvar</h3>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--header -->
+    <header class="header">
+      <img class="logo" src="./images/Vector.svg" alt="logo">
+      <img class="line" src="./images/line-.jpg" alt="line">
+    </header>
+    <main class="content">
+      <!--profile -->
+      <section class="profile">
+        <img class="profile__image" src="./images/image.jpg" alt="AVATAR">
+        <div class="profile__texts">
+          <h2 class="profile__title">Jacques Cousteau</h2>
+          <h3 class="profile__subtitle">Explorar</h3>
+        </div>
+        <button class="profile__button" id="edit"><img class="edit" src="./images/button.jpg" alt="edit"></button>
+        <button class="profile__add-button" id="add"><img class="add" src="./images/add-button.jpg" alt="add"></button>
+      </section>
+      <!--elements-->
+      <section class="elements">
+        <ul class="cards">
+          <li class="cards__item">
+            <img class="cards__image" src="./images/vale.jpg" alt="Vale de Yosemite">
+            <div class="cards__box">
+              <h4 class="cards__title">Vale de Yosemite</h4>
+              <button class="cards__button" id="like-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="none">
+                  <path
+                    d="M19.3764 9.78586C21.5412 7.54338 21.5412 3.90213 19.3764 1.68186C17.2115 -0.560619 13.6964 -0.560619 11.5315 1.68186L10.4812 2.792L9.43098 1.70406C7.26614 -0.560619 3.75096 -0.560619 1.60755 1.68186C0.557285 2.76979 0 4.21297 0 5.74496C0 7.27695 0.578719 8.72013 1.60755 9.80806L10.4812 19L19.3764 9.78586ZM1.37178 5.74496C1.37178 4.59042 1.80046 3.52469 2.59352 2.72539C3.40801 1.88168 4.45828 1.45983 5.50855 1.45983C6.55882 1.45983 7.60909 1.88168 8.42358 2.72539L10.4812 4.83465L12.5389 2.70318C14.1465 1.03798 16.7829 1.03798 18.369 2.70318C19.1406 3.50248 19.5907 4.56821 19.5907 5.72276C19.5907 6.8773 19.162 7.94303 18.369 8.74233L10.4812 16.9351L2.59352 8.76453C1.82189 7.94303 1.37178 6.8773 1.37178 5.74496Z"
+                    fill="black" />
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="cards__item">
+            <img class="cards__image" src="./images/logo-louise.png" alt="Lago Louise">
+            <div class="cards__box">
+              <h4 class="cards__title">Lago Louise</h4>
+              <button class="cards__button" id="like-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="none">
+                  <path
+                    d="M19.3764 9.78586C21.5412 7.54338 21.5412 3.90213 19.3764 1.68186C17.2115 -0.560619 13.6964 -0.560619 11.5315 1.68186L10.4812 2.792L9.43098 1.70406C7.26614 -0.560619 3.75096 -0.560619 1.60755 1.68186C0.557285 2.76979 0 4.21297 0 5.74496C0 7.27695 0.578719 8.72013 1.60755 9.80806L10.4812 19L19.3764 9.78586ZM1.37178 5.74496C1.37178 4.59042 1.80046 3.52469 2.59352 2.72539C3.40801 1.88168 4.45828 1.45983 5.50855 1.45983C6.55882 1.45983 7.60909 1.88168 8.42358 2.72539L10.4812 4.83465L12.5389 2.70318C14.1465 1.03798 16.7829 1.03798 18.369 2.70318C19.1406 3.50248 19.5907 4.56821 19.5907 5.72276C19.5907 6.8773 19.162 7.94303 18.369 8.74233L10.4812 16.9351L2.59352 8.76453C1.82189 7.94303 1.37178 6.8773 1.37178 5.74496Z"
+                    fill="black" />
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="cards__item">
+            <img class="cards__image" src="./images/montanhas.png" alt="Montanhas Care...">
+            <div class="cards__box">
+              <h4 class="cards__title">Montanhas Care...</h4>
+              <button class="cards__button" id="like-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="none">
+                  <path
+                    d="M19.3764 9.78586C21.5412 7.54338 21.5412 3.90213 19.3764 1.68186C17.2115 -0.560619 13.6964 -0.560619 11.5315 1.68186L10.4812 2.792L9.43098 1.70406C7.26614 -0.560619 3.75096 -0.560619 1.60755 1.68186C0.557285 2.76979 0 4.21297 0 5.74496C0 7.27695 0.578719 8.72013 1.60755 9.80806L10.4812 19L19.3764 9.78586ZM1.37178 5.74496C1.37178 4.59042 1.80046 3.52469 2.59352 2.72539C3.40801 1.88168 4.45828 1.45983 5.50855 1.45983C6.55882 1.45983 7.60909 1.88168 8.42358 2.72539L10.4812 4.83465L12.5389 2.70318C14.1465 1.03798 16.7829 1.03798 18.369 2.70318C19.1406 3.50248 19.5907 4.56821 19.5907 5.72276C19.5907 6.8773 19.162 7.94303 18.369 8.74233L10.4812 16.9351L2.59352 8.76453C1.82189 7.94303 1.37178 6.8773 1.37178 5.74496Z"
+                    fill="black" />
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="cards__item">
+            <img class="cards__image" src="./images/latemar.png" alt="Latemar">
+            <div class="cards__box">
+              <h4 class="cards__title">Latemar</h4>
+              <button class="cards__button" id="like-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="none">
+                  <path
+                    d="M19.3764 9.78586C21.5412 7.54338 21.5412 3.90213 19.3764 1.68186C17.2115 -0.560619 13.6964 -0.560619 11.5315 1.68186L10.4812 2.792L9.43098 1.70406C7.26614 -0.560619 3.75096 -0.560619 1.60755 1.68186C0.557285 2.76979 0 4.21297 0 5.74496C0 7.27695 0.578719 8.72013 1.60755 9.80806L10.4812 19L19.3764 9.78586ZM1.37178 5.74496C1.37178 4.59042 1.80046 3.52469 2.59352 2.72539C3.40801 1.88168 4.45828 1.45983 5.50855 1.45983C6.55882 1.45983 7.60909 1.88168 8.42358 2.72539L10.4812 4.83465L12.5389 2.70318C14.1465 1.03798 16.7829 1.03798 18.369 2.70318C19.1406 3.50248 19.5907 4.56821 19.5907 5.72276C19.5907 6.8773 19.162 7.94303 18.369 8.74233L10.4812 16.9351L2.59352 8.76453C1.82189 7.94303 1.37178 6.8773 1.37178 5.74496Z"
+                    fill="black" />
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="cards__item">
+            <img class="cards__image" src="./images/vanoise.png" alt="Vanoise Nationa...">
+            <div class="cards__box">
+              <h4 class="cards__title">Vanoise Nationa...</h4>
+              <button class="cards__button" id="like-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="none">
+                  <path
+                    d="M19.3764 9.78586C21.5412 7.54338 21.5412 3.90213 19.3764 1.68186C17.2115 -0.560619 13.6964 -0.560619 11.5315 1.68186L10.4812 2.792L9.43098 1.70406C7.26614 -0.560619 3.75096 -0.560619 1.60755 1.68186C0.557285 2.76979 0 4.21297 0 5.74496C0 7.27695 0.578719 8.72013 1.60755 9.80806L10.4812 19L19.3764 9.78586ZM1.37178 5.74496C1.37178 4.59042 1.80046 3.52469 2.59352 2.72539C3.40801 1.88168 4.45828 1.45983 5.50855 1.45983C6.55882 1.45983 7.60909 1.88168 8.42358 2.72539L10.4812 4.83465L12.5389 2.70318C14.1465 1.03798 16.7829 1.03798 18.369 2.70318C19.1406 3.50248 19.5907 4.56821 19.5907 5.72276C19.5907 6.8773 19.162 7.94303 18.369 8.74233L10.4812 16.9351L2.59352 8.76453C1.82189 7.94303 1.37178 6.8773 1.37178 5.74496Z"
+                    fill="black" />
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="cards__item">
+            <img class="cards__image" src="./images/lago-di-braies.png" alt="Lago di Braies">
+            <div class="cards__box">
+              <h4 class="cards__title">Lago di Braies</h4>
+              <button class="cards__button" id="like-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="none">
+                  <path
+                    d="M19.3764 9.78586C21.5412 7.54338 21.5412 3.90213 19.3764 1.68186C17.2115 -0.560619 13.6964 -0.560619 11.5315 1.68186L10.4812 2.792L9.43098 1.70406C7.26614 -0.560619 3.75096 -0.560619 1.60755 1.68186C0.557285 2.76979 0 4.21297 0 5.74496C0 7.27695 0.578719 8.72013 1.60755 9.80806L10.4812 19L19.3764 9.78586ZM1.37178 5.74496C1.37178 4.59042 1.80046 3.52469 2.59352 2.72539C3.40801 1.88168 4.45828 1.45983 5.50855 1.45983C6.55882 1.45983 7.60909 1.88168 8.42358 2.72539L10.4812 4.83465L12.5389 2.70318C14.1465 1.03798 16.7829 1.03798 18.369 2.70318C19.1406 3.50248 19.5907 4.56821 19.5907 5.72276C19.5907 6.8773 19.162 7.94303 18.369 8.74233L10.4812 16.9351L2.59352 8.76453C1.82189 7.94303 1.37178 6.8773 1.37178 5.74496Z"
+                    fill="black" />
+                </svg>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <!--footer-->
+    <footer class="footer">
+      <p class="footer__text">© 2021 Around The U.S.</p>
+    </footer>
+  </div>
 </body>
 
 </html>
