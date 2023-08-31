@@ -3,34 +3,41 @@ const formElement = document.querySelector('.form');
 const profileButton = document.querySelector('.profile__button');
 const profileTitle = document.querySelector('.profile__title');
 const profileSubtitle = document.querySelector('.profile__subtitle');
-const formClose = document.querySelector('.popup__button');
-const submitForm = document.querySelector('.popup__save-button');
-const inputNome = document.querySelector('.popup__heading');
-const inputJob = document.querySelector('.popup__subheading');
+const closeButton = document.querySelector('.popup__button');
+const saveButton = document.querySelector('.popup__save-button');
+const nameInput = document.querySelector('.popup__heading');
+const jobInput = document.querySelector('.popup__subheading');
 const popUp = document.querySelector('.popup');
 const backgroundForm = document.querySelector('.background-form');
 
+function handleProfileFormSubmit(evt) {
+  evt.preventDefault();
 
-inputNome.value = profileTitle.textContent;
-inputJob.value = profileSubtitle.textContent;
+  profileTitle.textContent = nameInput.value;
+  profileSubtitle.textContent = jobInput.value;
+}
+
+formElement.addEventListener('submit', (event) => {
+  evt.preventDefault()
+  nameInput.style.value = profileTitle.textContent;
+  jobInput.style.value = profilesubtitle.textContent;
+});
+
 
 profileButton.addEventListener('click', () => {
   formElement.style.display = 'block';
   formElement.style.overflow = 'hidden';
-  inputNome.style.value = 'jack'
-});
-formElement.addEventListener('submit', (event) => {
-    event.preventDefault()
-  profileTitle.textContent = inputNome.value;
-  profileSubtitle.textContent = inputJob.value;
+
 });
 
-// Aqui irei programar para ele fechar com click no X e no submit
+closeButton.addEventListener('click', () => {
+  formElement.style.display = 'none';
+  backgroundForm.style.opacity = '1';
 
-formClose.addEventListener('click', () => {
-  formElement.style.display = 'none'
-})
+});
 
-submitForm.addEventListener('click', () => {
-  formElement.style.display = 'none'
-})
+saveButton.addEventListener('click', () => {
+  formElement.style.display = 'none';
+  backgroundForm.style.opacity = '1';
+
+});
