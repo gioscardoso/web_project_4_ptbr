@@ -1,30 +1,36 @@
 // Vamos encontrar o formulário no DOM
-let formElement = // Use o método querySelector()
+const formElement = document.querySelector('.form');
+const profileButton = document.querySelector('.profile__button');
+const profileTitle = document.querySelector('.profile__title');
+const profileSubtitle = document.querySelector('.profile__subtitle');
+const formClose = document.querySelector('.popup__button');
+const submitForm = document.querySelector('.popup__save-button');
+const inputNome = document.querySelector('.popup__heading');
+const inputJob = document.querySelector('.popup__subheading');
+const popUp = document.querySelector('.popup');
+const backgroundForm = document.querySelector('.background-form');
 
-// Em seguida vem o handler do submit
-// ainda não vai enviar para lugar nenhum
 
-// Observe que o nome da função começa com um verbo
-// e descreve exatamente o que a função faz
-function handleProfileFormSubmit(evt) {
-    // Esta linha impede o navegador
-    // de enviar o formulário da forma padrão.
-    evt.preventDefault();
-    // Fazendo isso, podemos definir nossa própria forma de enviar o formulário.
-    // Explicaremos em mais detalhes posteriormente.
+inputNome.value = profileTitle.textContent;
+inputJob.value = profileSubtitle.textContent;
 
-    // Vamos encontrar os campos de formulário do DOM
-    let nameInput = // Use querySelector()
-    let jobInput = // Use querySelector()
+profileButton.addEventListener('click', () => {
+  formElement.style.display = 'block';
+  formElement.style.overflow = 'hidden';
+  inputNome.style.value = 'jack'
+});
+formElement.addEventListener('submit', (event) => {
+    event.preventDefault()
+  profileTitle.textContent = inputNome.value;
+  profileSubtitle.textContent = inputJob.value;
+});
 
-    // Pegue os valores de cada campo do valor da propriedade correspondente
+// Aqui irei programar para ele fechar com click no X e no submit
 
-    // Selecione os elementos aos quais os valores dos campos serão inseridos
+formClose.addEventListener('click', () => {
+  formElement.style.display = 'none'
+})
 
-    // Insira novos valores usando a
-    // propriedade textContent
-}
-
-// Conecte o handler ao formulário:
-// ele vai observar o evento de submit
-formElement.addEventListener('submit', handleProfileFormSubmit);
+submitForm.addEventListener('click', () => {
+  formElement.style.display = 'none'
+})

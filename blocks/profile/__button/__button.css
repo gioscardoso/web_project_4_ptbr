@@ -1,0 +1,26 @@
+.profile__button {
+  width: 1.5rem;
+  flex-shrink: 0;
+  background-color: #000;
+  border-style: none;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .profile__button {
+    width: 1.3rem;
+    flex-shrink: 0;
+    background-color: #000;
+    border-style: none;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .profile__button {
+    width: 1.125rem;
+    height: 1.125rem;
+    flex-shrink: 0;
+    margin-left: 10rem;
+    margin-top: -4rem;
+  }
+}

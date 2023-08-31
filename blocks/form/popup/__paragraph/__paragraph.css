@@ -1,0 +1,5 @@
+.popup__paragraph {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}

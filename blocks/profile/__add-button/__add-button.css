@@ -1,0 +1,32 @@
+.profile__add-button {
+  width: 9.375rem;
+  flex-shrink: 0;
+  background-color: #000;
+  border-style: none;
+  margin-left: 8.5rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .profile__add-button {
+    margin-right: 3rem;
+    flex-shrink: 0;
+    background-color: #000;
+    border-style: none;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .profile__add-button {
+    width: 17.625rem;
+    height: 3.125rem;
+    flex-shrink: 0;
+    background-color: #000;
+    border-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-right: 12rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+}

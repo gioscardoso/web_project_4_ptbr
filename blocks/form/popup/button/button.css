@@ -1,0 +1,43 @@
+.button-heading {
+  width: 6.8125rem;
+  height: 1.125rem;
+  flex-shrink: 0;
+  color: #FFF;
+  text-align: center;
+  font-family: 'Inter';
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .button-heading {
+    width: 4rem;
+    height: 1.125rem;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .button-heading {
+    width: 2.875rem;
+    height: 1.125rem;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}

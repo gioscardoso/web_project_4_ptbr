@@ -1,0 +1,30 @@
+.popup__save-button {
+  width: 22.375rem;
+  height: 3.1345rem;
+  margin-left: 2rem;
+  margin-top: 3rem;
+  flex-shrink: 0;
+  border-radius: 0.125rem;
+  background: #000;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .popup__save-button {
+    width: 18rem;
+    height: 3rem;
+    flex-shrink: 0;
+    border-radius: 0.125rem;
+    background: #000;
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .popup__save-button {
+    width: 13.875rem;
+    height: 2.875rem;
+    flex-shrink: 0;
+    border-radius: 0.125rem;
+    background: #000;
+  }
+}

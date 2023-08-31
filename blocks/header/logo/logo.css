@@ -1,0 +1,27 @@
+.logo {
+  width: 10.8125rem;
+  height: 2.0625rem;
+  flex-shrink: 0;
+  margin-left: 12.5rem;
+  margin-top: 2.81rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .logo {
+    width: 30.875rem;
+    height: 3rem;
+    fill: #FFF;
+    margin-left: -2rem;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .logo {
+    width: 7.875rem;
+    height: 1.5rem;
+    flex-shrink: 0;
+    fill: #FFF;
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+}

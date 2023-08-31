@@ -1,0 +1,42 @@
+.profile__title {
+  width: 23.3125rem;
+  height: 2.4375rem;
+  flex-shrink: 0;
+  margin-bottom: 1rem;
+  color: #FFF;
+  font-family: 'Inter Medium';
+  font-size: 2.625rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3rem;
+  /* 114.286% */
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .profile__title {
+    width: auto;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .profile__title {
+    width: 12.25rem;
+    height: 1.375rem;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 1.375rem;
+    margin-right: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
