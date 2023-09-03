@@ -19,8 +19,8 @@ function handleProfileFormSubmit(evt) {
 
 formElement.addEventListener('submit', (event) => {
   evt.preventDefault()
-  nameInput.style.value = profileTitle.textContent;
-  jobInput.style.value = profilesubtitle.textContent;
+  profileTitle.textContent = nameInput.value;
+  profileSubtitle.textContent = jobInput.value;
 });
 
 
@@ -39,5 +39,4 @@ closeButton.addEventListener('click', () => {
 saveButton.addEventListener('click', () => {
   formElement.style.display = 'none';
   backgroundForm.style.opacity = '1';
-
 });
