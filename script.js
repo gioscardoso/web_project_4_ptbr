@@ -15,12 +15,15 @@ function handleProfileFormSubmit(evt) {
 
   profileTitle.textContent = nameInput.value;
   profileSubtitle.textContent = jobInput.value;
+
 }
 
 formElement.addEventListener('submit', (event) => {
   evt.preventDefault()
   profileTitle.textContent = nameInput.value;
   profileSubtitle.textContent = jobInput.value;
+  formElement.style.display = 'none';
+  backgroundForm.style.opacity = '1';
 });
 
 
@@ -36,7 +39,10 @@ closeButton.addEventListener('click', () => {
 
 });
 
-saveButton.addEventListener('click', () => {
+saveButton.addEventListener('click', (event) => {
+  event.preventDefault()
+  profileTitle.textContent = nameInput.value;
+  profileSubtitle.textContent = jobInput.value;
   formElement.style.display = 'none';
   backgroundForm.style.opacity = '1';
 });

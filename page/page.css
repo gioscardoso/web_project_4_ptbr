@@ -20,7 +20,6 @@
 
 /*form*/
 @import url(../blocks/form/form.css);
-@import url(../blocks/form/background/background.css);
 
 /*popup*/
 @import url(../blocks/form/popup/popup.css);
@@ -33,7 +32,6 @@
 @import url(../blocks/form/popup/__save-button/hover/hover.css);
 @import url(../blocks/form/popup/__paragraph/__paragraph.css);
 @import url(../blocks/form/popup/__opened/opened.css);
-@import url(../blocks/form/popup/__line/__line.css);
 @import url(../blocks/form/popup/__heading/__heading.css);
 @import url(../blocks/form/popup/__container/__container.css);
 
