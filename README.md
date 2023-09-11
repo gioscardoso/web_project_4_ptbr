@@ -2,6 +2,8 @@
 
 ### Visão geral
 
+Esse é um projeto no qual visa a funcionamento do javascript
+
 * Figma
 * Imagens
 
@@ -9,8 +11,13 @@
 
 * [Link para o projeto no Figma](https://www.figma.com/file/XfB6BSINvliub43JgKza1e/WEB.-Sprint-4.-Around-The-U.S.-desktop-%2B-mobile-pt)
 
-**Imagens**
 
-A maneira como você fará isso no trabalho é exportando imagens diretamente do Figma — recomendamos fazer isso para praticar mais. Não se esqueça de otimizá-los [aqui](https://tinypng.com/), para que seu projeto carregue mais rápido.
+## Tecnologias Utilizadas
 
-Divirta-se com JavaScript!
+HTML, CSS & javascript
+
+## Autor
+
+Giovana Cardoso
+
+
