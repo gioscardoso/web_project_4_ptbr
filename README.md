@@ -2,7 +2,7 @@
 
 ### Visão geral
 
-Esse é um projeto no qual visa a funcionamento do javascript
+Esse é um projeto no qual visa o funcionamento do básico de javascript
 
 * Figma
 * Imagens
