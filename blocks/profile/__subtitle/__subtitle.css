@@ -1,12 +1,12 @@
 .profile__subtitle {
   margin-top: 0;
   color: #FFF;
-  font-family: 'Inter Regular';
+  font-family: inherit;
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-
+  overflow: hidden;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {
@@ -15,12 +15,12 @@
     margin-right: 9rem;
     color: #FFF;
     text-align: center;
-    font-family: 'Inter';
+    font-family: inherit;
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: -1rem;
+    overflow: hidden;
   }
 }
 
@@ -31,10 +31,11 @@
     flex-shrink: 0;
     color: #FFF;
     text-align: center;
-    font-family: 'Inter';
+    font-family: inherit;
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    overflow: hidden;
   }
 }

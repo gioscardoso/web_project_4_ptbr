@@ -3,7 +3,7 @@
   margin-left: 1.5rem;
   flex-shrink: 0;
   color: #000;
-  font-family: 'Inter Black';
+  font-family: inherit;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 900;
@@ -19,7 +19,7 @@
     height: 1.4375rem;
     flex-shrink: 0;
     color: #000;
-    font-family: 'Inter';
+    font-family: inherit;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 900;
@@ -27,16 +27,3 @@
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .cards__title {
-    width: 15.375rem;
-    height: 1.4375rem;
-    flex-shrink: 0;
-    color: #000;
-    font-family: 'Inter';
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
-  }
-}

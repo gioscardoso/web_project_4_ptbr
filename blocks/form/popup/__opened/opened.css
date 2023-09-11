@@ -1,3 +1,11 @@
-.popup__opened {
-  display: fixed;
+.popup {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .popup {
+    display: flex;
+    flex-direction: column;
+  }
 }

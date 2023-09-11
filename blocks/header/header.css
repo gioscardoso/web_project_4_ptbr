@@ -9,6 +9,7 @@
     width: 30rem;
     height: 3.9rem;
     flex-shrink: 0;
+    text-align: center;
   }
 }
 
@@ -17,5 +18,6 @@
     width: 20rem;
     height: 3.5rem;
     flex-shrink: 0;
+    text-align: center;
   }
 }
