@@ -20,7 +20,7 @@
     width: 1.125rem;
     height: 1.125rem;
     flex-shrink: 0;
-    margin-left: 10rem;
-    margin-top: -4rem;
+    margin-left: 12rem;
+    position: absolute;
   }
 }

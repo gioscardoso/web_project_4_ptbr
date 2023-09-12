@@ -17,7 +17,8 @@
   .profile__texts {
     display: flex;
     flex-direction: column;
-    margin-right: 3rem;
     align-items: center;
+    margin: auto 0;
+    position: absolute;
   }
 }

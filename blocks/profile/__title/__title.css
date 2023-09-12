@@ -10,6 +10,7 @@
   font-weight: 500;
   line-height: 3rem;
   overflow: hidden;
+  text-overflow: ellipsis;
   /* 114.286% */
 }
 
@@ -24,6 +25,7 @@
     font-weight: 500;
     line-height: normal;
     overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 
@@ -41,5 +43,6 @@
     font-weight: 500;
     line-height: normal;
     overflow: hidden;
+    text-overflow: ellipsis;
   }
 }

@@ -22,7 +22,8 @@
     height: 7.96875rem;
     flex-shrink: 0;
     background: lightgray 50% / cover no-repeat;
-    margin-right: 4rem;
     object-fit: cover;
+    margin-right: 2rem;
+    margin-bottom: 6rem;
   }
 }
