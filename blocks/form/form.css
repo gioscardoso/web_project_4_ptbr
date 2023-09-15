@@ -8,7 +8,7 @@
   position: fixed;
   z-index: 1;
   top: 27%;
-  left: 38%;
+  left: 43%;
   margin: auto 0;
 }
 
@@ -42,6 +42,6 @@
     position: fixed;
     z-index: 1;
     position: absolute;
-    left: 6%;
+    left: auto;
   }
 }
