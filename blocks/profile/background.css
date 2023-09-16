@@ -1,3 +1,4 @@
 .background__profile {
-  opacity: 0.4;
+    opacity: 0.4;
+    z-index: 999;
 }

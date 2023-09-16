@@ -9,6 +9,7 @@ const nameInput = document.querySelector('.popup__heading');
 const jobInput = document.querySelector('.popup__subheading');
 const popUp = document.querySelector('.popup');
 const backgroundForm = document.querySelector('.background-form');
+const backgroundProfile = document.querySelector('.background__profile');
 
 function handleProfileFormSubmit(evt) {
   evt.preventDefault();
@@ -26,16 +27,16 @@ formElement.addEventListener('submit', (event) => {
   backgroundForm.style.opacity = '1';
 });
 
-
 profileButton.addEventListener('click', () => {
   formElement.style.display = 'block';
   formElement.style.overflow = 'hidden';
-
+  backgroundProfile.style.opacity = '0.4';
 });
 
 closeButton.addEventListener('click', () => {
   formElement.style.display = 'none';
   backgroundForm.style.opacity = '1';
+  backgroundProfile.style.opacity = '1';
 
 });
 
@@ -45,4 +46,5 @@ saveButton.addEventListener('click', (event) => {
   profileSubtitle.textContent = jobInput.value;
   formElement.style.display = 'none';
   backgroundForm.style.opacity = '1';
+  backgroundProfile.style.opacity = '1';
 });
